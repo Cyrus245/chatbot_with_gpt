@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Welcome to the chatgpt</h1>
+<form method="post" action={{ url_for('index') }}>
+    {{ form.csrf_token }}
+    {{ form.prompt.label }} {{ form.prompt }}
+</form>
+
+<form method="post">
+    <label>Name
+        <input type="text" name="name">
+ </label>
+    <input type="submit">
+</form>
+
+</body>
+</html>
